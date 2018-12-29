@@ -1,0 +1,39 @@
+{
+  "name": "@devchris/reactgl",
+  "version": "0.1.0",
+  "description": "WebGL React Component",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint --project . -t stylish",
+    "lint:fix": "yarn lint --fix",
+    "lint:check": "tslint-config-prettier-check ./tslint.json",
+    "prepublishOnly": "yarn lint:fix && yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yovanoc/reactgl.git"
+  },
+  "author": "Christopher Yovanovitch <yovano_c@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yovanoc/reactgl/issues"
+  },
+  "homepage": "https://github.com/yovanoc/reactgl#readme",
+  "devDependencies": {
+    "@types/gl-matrix": "^2.4.4",
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "gl-matrix": "^2.8.1",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  }
+}
